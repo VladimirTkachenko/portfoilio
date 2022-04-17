@@ -1,0 +1,49 @@
+.topnav {
+    background-color: #edeaea;
+    display: grid;
+    grid-template-columns: repeat(6,135px);
+    grid-auto-rows: minmax(70px, auto);
+    align-items: center;
+    justify-content: end;
+}
+
+.topnav>div:first-child {
+    display: none;
+}
+
+.topnav a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+.topnav a>i {
+    font-size: 1.25rem;
+    color: #5d5deb;
+}
+
+
+.topnav a:hover,
+.topnav a:hover>i {
+    background-color: #ddd;
+}
+
+a.active,
+a.active>i {
+    background-color: #b9bdbd;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-height: 100px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
